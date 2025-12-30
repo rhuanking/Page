@@ -12,75 +12,90 @@ body {
     align-items: center;
     font-family: "Segoe UI", Arial, sans-serif;
     color: #e5e7eb;
-    padding: 20px; /* evita colar nas bordas no celular */
+    padding: 16px;
 }
 
+/* CARTÃO */
 .card {
-    background: rgba(2, 6, 23, 0.95);
+    background: rgba(2, 6, 23, 0.97);
     width: 100%;
-    max-width: 420px;
-    padding: 32px 24px;
-    border-radius: 22px;
+    max-width: 520px; /* MAIS LARGO */
+    padding: 36px 26px;
+    border-radius: 26px;
     text-align: center;
-    box-shadow: 0 30px 60px rgba(0,0,0,.75);
+    box-shadow: 0 35px 70px rgba(0,0,0,.8);
 }
 
-/* IMAGEM */
+/* FOTO */
 .avatar {
-    width: 140px;
-    max-width: 40vw; /* adapta no celular */
+    width: 160px;
+    max-width: 55vw;
     border-radius: 50%;
     border: 4px solid #38bdf8;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
-/* TEXTO */
+/* TEXTOS */
 h1 {
-    font-size: clamp(1.6rem, 5vw, 1.9rem);
+    font-size: clamp(1.8rem, 6vw, 2.1rem);
+    margin-bottom: 6px;
 }
 
 .subtitle {
-    font-size: clamp(.85rem, 3vw, .95rem);
+    font-size: clamp(1rem, 4vw, 1.1rem);
+    margin-bottom: 18px;
+    color: #94a3b8;
 }
 
 .bio {
-    font-size: clamp(.95rem, 3.5vw, 1rem);
-    line-height: 1.5;
-    margin-bottom: 24px;
+    font-size: clamp(1.05rem, 4.2vw, 1.15rem);
+    line-height: 1.6;
+    margin-bottom: 28px;
 }
 
 /* LINKS */
 .links {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
 }
 
 .links a {
-    padding: 14px;
-    font-size: clamp(.95rem, 3.5vw, 1rem);
+    padding: 18px;
+    font-size: clamp(1.05rem, 4vw, 1.15rem);
+    border-radius: 18px;
 }
 
 /* BOTÃO */
 .save-contact {
-    padding: 14px 22px;
-    font-size: clamp(.95rem, 3.5vw, 1rem);
+    padding: 18px 28px;
+    font-size: 1.1rem;
+    border-radius: 32px;
 }
 
 /* QR */
-.qr img {
-    width: 160px;
-    max-width: 60vw;
+.qr {
+    margin-top: 28px;
 }
 
-/* 💻 AJUSTES PARA PC / TELAS GRANDES */
-@media (min-width: 768px) {
+.qr p {
+    font-size: 1rem;
+}
+
+.qr img {
+    width: 190px;
+    max-width: 70vw;
+    margin-top: 12px;
+}
+
+/* 💻 DESKTOP */
+@media (min-width: 900px) {
     .card {
         max-width: 460px;
         padding: 40px 32px;
     }
 
     .avatar {
-        width: 160px;
+        width: 150px;
     }
 }
